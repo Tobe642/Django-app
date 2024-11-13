@@ -133,3 +133,15 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'itreporting:home'
 LOGIN_URL = 'login'
+LOGIN_URL = 'itreporting:home'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangodb',
+        'USER': 'root',
+        'PASSWORD': 'Power2020',
+        'HOST': 'localhost',  # Use 'localhost' if MySQL is running locally
+        'PORT': '3306',       # Default MySQL port
+    }
+}
