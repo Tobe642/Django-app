@@ -67,3 +67,13 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r 2> /dev/null
 fi
+
+export AZURE_DB_NAME='development'
+export AZURE_DB_HOST='c2088748.mysql.database.azure.com'
+export AZURE_DB_PORT='3306'
+export AZURE_DB_USER='c2088748'
+export AZURE_DB_PASSWORD='Power2020'
+export AZURE_SA_NAME="djangostorage1"
+export AZURE_SA_KEY="g8RwIbBDKRhdVq/r5G5kZx0q0UUelfHNmwWkJtkrtP1uQtrwS+k0G8y7Ae4+YUR61Nq7ka+cDXF++AStwfq7dw=="
+
+
