@@ -25,18 +25,18 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'Power2020')
 WEBSITE_HOSTNAME = os.environ.get('WEBSITE_HOSTNAME', None)
 DEBUG = WEBSITE_HOSTNAME == None
 
-if DEBUG:
 
-    ALLOWED_HOSTS = []
-else:
-    ALLOWED_HOSTS = [WEBSITE_HOSTNAME]
 
-CSRF_TRUSTED_ORIGINS = [f'https://{WEBSITE_HOSTNAME}']
+ALLOWED_HOSTS = ['c2088748-aqe7fhc9f7e5fndp.uksouth-01.azurewebsites.net']
+
+
+
+CSRF_TRUSTED_ORIGINS = [f'https://c2088748-aqe7fhc9f7e5fndp.uksouth-01.azurewebsites.net']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
