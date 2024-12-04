@@ -27,7 +27,7 @@ DEBUG = WEBSITE_HOSTNAME == None
 
 
 
-ALLOWED_HOSTS = ['c2088748-aqe7fhc9f7e5fndp.uksouth-01.azurewebsites.net']
+ALLOWED_HOSTS = ['c2088748-aqe7fhc9f7e5fndp.uksouth-01.azurewebsites.net', '127.0.0.1']
 
 
 
@@ -170,13 +170,13 @@ LOGIN_REDIRECT_URL = 'itreporting:home'
 LOGIN_URL = 'login'
 LOGIN_URL = 'itreporting:home'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangodb',
-        'USER': 'root',
-        'PASSWORD': 'Power2020',
-        'HOST': 'localhost',  # Use 'localhost' if MySQL is running locally
-        'PORT': '3306',       # Default MySQL port
-    }
-}
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.mysql',
+   #     'NAME': 'djangodb',
+   #     'USER': 'root',
+    #    'PASSWORD': 'Power2020',
+    #    'HOST': 'localhost',  # Use 'localhost' if MySQL is running locally
+    #    'PORT': '3306',       # Default MySQL port
+   # }
+#}
