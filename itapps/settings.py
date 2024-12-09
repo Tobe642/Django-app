@@ -48,11 +48,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'itreporting',
-    'users.apps.UsersConfig',
     'crispy_forms',
     'crispy_bootstrap4',   
+    'students',
+    'categories',
+    'courses',
+    'modules',
+    'registrations',
+    
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -166,9 +171,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'itreporting:home'
-LOGIN_URL = 'login'
-LOGIN_URL = 'itreporting:home'
+# LOGIN_REDIRECT_URL = 'itreporting:home'
+# LOGIN_URL = 'login'
+# LOGIN_URL = 'itreporting:home'
 
 #DATABASES = {
  #   'default': {
