@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 
-class Profile(models.Model):
+class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     date_of_birth = models.DateField(null=True, blank=True)
     address = models.CharField(max_length=255, null=True, blank=True)
