@@ -27,7 +27,7 @@ DEBUG = WEBSITE_HOSTNAME == None
 
 
 
-ALLOWED_HOSTS = ['c2088748-aqe7fhc9f7e5fndp.uksouth-01.azurewebsites.net', '127.0.0.1']
+ALLOWED_HOSTS = ['c2088748-aqe7fhc9f7e5fndp.uksouth-01.azurewebsites.net', 'localhost', '127.0.0.1']
 
 
 
@@ -49,13 +49,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'crispy_bootstrap4',   
+    'crispy_bootstrap4',  
+    'itapps', 
     'students',
     'categories',
     'courses',
     'modules',
     'registrations',
-    
+    'pages',
 ]
 
 
@@ -82,6 +83,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'itapps.context_processors.weather_data'
             ],
         },
     },
@@ -138,7 +140,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-# STATIC_URL = 'static/'
+STATIC_URL = 'static/'
 # MEDIA_ROOT = BASE_DIR / 'media'
 # MEDIA_URL = '/media/'
 AZURE_SA_NAME = os.environ['AZURE_SA_NAME']
@@ -171,9 +173,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# LOGIN_REDIRECT_URL = 'itreporting:home'
-# LOGIN_URL = 'login'
-# LOGIN_URL = 'itreporting:home'
+
+LOGOUT_REDIRECT_URL = 'pages:home'
+LOGIN_REDIRECT_URL = 'pages:home'
+#LOGIN_URL = 'login'
+#LOGIN_URL = 'itapps:home'
 
 #DATABASES = {
  #   'default': {
