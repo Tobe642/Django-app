@@ -1,0 +1,61 @@
+<!-- LOGIN PAGE -->
+{% extends "itapps/auth_layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="row justify-content-sm-center">
+    <div class="col-md-auto">
+
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <legend class="border-bottom mb-4">Register to get started.</legend>
+
+            <div class="row">
+                <div class="form-group py-2 col">
+                    {{form.username|as_crispy_field}}
+                </div>
+
+                <div class="form-group py-2 col">
+                    {{form.email|as_crispy_field}}
+                </div>
+                <div class="w100"></div>
+                
+
+                <div class="form-group py-2 col">
+                    {{form.first_name|as_crispy_field}}
+                </div>
+
+                <div class="form-group py-2 col">
+                    {{form.last_name|as_crispy_field}}
+                </div>
+                <div class="w100"></div>
+
+                <div class="form-group py-2 col">
+                    {{form.password1|as_crispy_field}}
+                </div>
+
+                <div class="form-group py-2 col">
+                    {{form.password2|as_crispy_field}}
+                </div>
+
+
+            </div>
+
+            <div class="form-group py-3">
+                <button class="btn btn-outline-info" type="submit">Crete Account</button>
+            </div>
+        </form>
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already have an account?
+                <a class="ml-2" href="{% url 'pages:login'%}">Login</a>
+            </small>
+        </div>
+    </div>  
+</div>  
+
+{% endblock %}
+s
