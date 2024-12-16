@@ -1,0 +1,32 @@
+{% extends "itapps/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="display-5">My Registrations</h1>
+    <hr class="my-4">
+
+    {% if registrations %}
+        <div class="row">
+            {% for module in registrations %}
+            <!-- Each module card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ module.name }}</h5>
+                        <p class="card-text">
+                            <strong>Code:</strong> {{ module.code }}<br>
+                            <strong>Credits:</strong> {{ module.credit }}<br>
+                            <strong>Description:</strong> {{ module.description|truncatewords:20 }}
+                        </p>
+                        <a href="{% url 'modules:module_detail' module.id %}" class="btn btn-primary btn-sm">View Module</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Each module card -->
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-muted">You are not registered for any modules yet.</p>
+    {% endif %}
+</div>
+{% endblock %}
