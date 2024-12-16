@@ -1,0 +1,23 @@
+{% extends 'itapps/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        {% for module in modules %}
+        <!-- Each module card -->
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Module Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ module.name }}</h5>
+                    <p class="card-text">{{ module.description|truncatewords:20 }}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'modules:module_detail' module.id %}" class="btn btn-sm btn-primary">Module Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
