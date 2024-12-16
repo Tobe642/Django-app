@@ -1,0 +1,48 @@
+{% extends 'itapps/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Module Header -->
+    <div class="card shadow-lg p-4">
+        <div class="card-header bg-primary text-white text-center">
+            <h1 class="fs-1 text-white">{{ module.name }}</h1><!-- Bigger Title -->
+            <p class="fs-3"><strong>Module Code:</strong> {{ module.code }}</p> <!-- Bigger Subtitle -->
+        </div>
+        <div class="card-body">
+            <!-- Module Details -->
+            <p class="fs-4"><strong>Credits:</strong> {{ module.credit }}</p>
+            <p class="fs-4"><strong>Category:</strong> {{ module.category.name }}</p>
+            <p class="fs-4"><strong>Description:</strong> {{ module.description|default:"No description available." }}</p>
+            <p class="fs-4"><strong>Availability:</strong>
+                {% if module.available == 'OPEN' %}
+                    <span class="badge bg-success fs-5">Open</span> <!-- Bigger Badge -->
+                {% elif module.available == 'CLOSED' %}
+                    <span class="badge bg-danger fs-5">Closed</span>
+                {% else %}
+                    <span class="badge bg-warning text-dark fs-5">Waitlist</span>
+                {% endif %}
+            </p>
+
+            <!-- Enrollment Actions -->
+            <div class="mt-5 text-center"> <!-- Center align and add spacing -->
+                {% if is_enrolled %}
+                    <p class="text-success fs-4">You are currently enrolled in this module.</p>
+                    <form action="{% url 'modules:unenroll_from_module' module.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-lg px-5 py-3">Unenroll</button> <!-- Bigger Button -->
+                    </form>
+                {% else %}
+                    {% if module.available == 'OPEN' %}
+                        <form action="{% url 'modules:enroll_in_module' module.id %}" method="post" class="d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary btn-lg px-5 py-3">Enroll in this Module</button> <!-- Bigger Button -->
+                        </form>
+                    {% else %}
+                        <p class="text-muted fs-4">This module is not open for enrollment.</p>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
