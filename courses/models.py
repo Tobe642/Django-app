@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
-from categories.models import Category
+from django.urls import reverse
 
 class Course(models.Model):
         
@@ -10,3 +9,6 @@ class Course(models.Model):
 
     def __str__(self):
         return f'{self.name}'
+
+    def get_absolute_url(self):
+        return reverse('course_detail', kwargs={'course_id': self.id})
