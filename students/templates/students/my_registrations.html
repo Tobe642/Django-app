@@ -7,22 +7,24 @@
 
     {% if registrations %}
         <div class="row">
-            {% for module in registrations %}
+            {% for registration in registrations %}
+            {% if registration.module and registration.module.id %}
             <!-- Each module card -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">{{ module.name }}</h5>
+                        <h5 class="card-title">{{ registration.module.name }}</h5>
                         <p class="card-text">
-                            <strong>Code:</strong> {{ module.code }}<br>
-                            <strong>Credits:</strong> {{ module.credit }}<br>
-                            <strong>Description:</strong> {{ module.description|truncatewords:20 }}
+                            <strong>Code:</strong> {{ registration.module.code }}<br>
+                            <strong>Credits:</strong> {{ registration.module.credit }}<br>
+                            <strong>Description:</strong> {{ registration.module.description|truncatewords:20 }}
                         </p>
-                        <a href="{% url 'modules:module_detail' module.id %}" class="btn btn-primary btn-sm">View Module</a>
+                        <a href="{% url 'modules:module_detail' registration.module.id %}" class="btn btn-primary btn-sm">View Module</a>
                     </div>
                 </div>
             </div>
-            <!-- Each module card -->
+            <!-- End module card -->
+            {% endif %}
             {% endfor %}
         </div>
     {% else %}

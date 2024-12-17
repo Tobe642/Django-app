@@ -12,4 +12,6 @@ class Registration(models.Model):
     def __str__(self):
         return f'{self.student} {self.module.name}'
 
+
+
 # Create your models here.

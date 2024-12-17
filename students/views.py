@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserUpdateForm, ProfileUpdateForm
 from modules.models import Module  # Import Module model
+from registrations.models import Registration  # Import Registration model
 
 
 
@@ -28,10 +29,8 @@ def profile(request):
 
 @login_required
 def my_registrations(request):
-    # Get the logged-in user's registered modules
-    student = request.user
-    registrations = Module.objects.filter(enrolled_students=student)
-
+    # Fetch Registration objects for the logged-in user
+    registrations = Registration.objects.filter(student=request.user.student)
     return render(request, 'students/my_registrations.html', {
         'registrations': registrations
     })
