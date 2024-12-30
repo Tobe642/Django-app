@@ -51,7 +51,16 @@ def modulelist(request):
     return render(request,'pages/modulelist.html')  
 
 def contact(request):
-    return render(request,'pages/contact.html')  
+    if request.method == 'POST':
+        form = contactForm(request.POST)
+        if form.is_valid():
+    
+            pass
+            return redirect('success')
+        
+    else:
+        form = contactForm()    
+    return render(request,'pages/contact.html', {'form': form})  
 
 
 #def log
