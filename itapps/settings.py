@@ -191,3 +191,12 @@ LOGIN_REDIRECT_URL = 'pages:home'
     #    'PORT': '3306',       # Default MySQL port
    # }
 #}
+
+# Looking to send emails in production? Check out our Email API/SMTP product!
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '4923c15a034a8f'
+EMAIL_HOST_PASSWORD = 'c86461abdf5dc1'
+EMAIL_PORT = '2525'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

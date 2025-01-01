@@ -25,29 +25,30 @@
 
             <!-- Enrollment Actions -->
             <div class="mt-5 text-center"> <!-- Center align and add spacing -->
-                {% if is_enrolled %}
-                    <!-- Message if Enrolled -->
-                    <p class="text-success fs-4">You are currently enrolled in this module.</p>
-                    <!-- Unenroll Button -->
-                    <form action="{% url 'modules:unenroll_from_module' module.id %}" method="post" class="d-inline">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-danger btn-lg px-5 py-3">Unenroll</button>
-                    </form>
-                {% else %}
-                    <!-- Enrollment Condition -->
-                    {% if module.available == 'OPEN' %}
-                        <!-- Enroll Button -->
-                        <form action="{% url 'modules:enroll_in_module' module.id %}" method="post" class="d-inline">
+                {% if user.is_authenticated %}
+                    <!-- Show buttons if user is logged in -->
+                    {% if is_enrolled %}
+                        <p class="text-success fs-4">You are currently enrolled in this module.</p>
+                        <form action="{% url 'modules:unenroll_from_module' module.id %}" method="post" class="d-inline">
                             {% csrf_token %}
-                            <button type="submit" class="btn btn-primary btn-lg px-5 py-3">Enroll in this Module</button>
+                            <button type="submit" class="btn btn-danger btn-lg px-5 py-3">Unenroll</button> <!-- Bigger Button -->
                         </form>
-                    {% elif module.available == 'WAITLIST' %}
-                        <!-- Waitlist Message -->
-                        <p class="text-warning fs-4">Enrollment is currently on the waitlist.</p>
                     {% else %}
-                        <!-- Closed Message -->
-                        <p class="text-danger fs-4">This module is currently closed for enrollment.</p>
+                        {% if module.available == 'OPEN' %}
+                            <form action="{% url 'modules:enroll_in_module' module.id %}" method="post" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary btn-lg px-5 py-3">Enroll in this Module</button> <!-- Bigger Button -->
+                            </form>
+                        {% elif module.available == 'WAITLIST' %}
+                            <p class="text-warning fs-4">Enrollment is currently on the waitlist.</p>
+                        {% else %}
+                            <p class="text-danger fs-4">This module is currently closed for enrollment.</p>
+                        {% endif %}
                     {% endif %}
+                {% else %}
+                    <!-- Show login message and button if user is not logged in -->
+                    <p class="text-muted fs-4">Log in to enroll in this module.</p>
+                    <a href="{% url 'pages:login' %}?next={{ request.path }}" class="btn btn-outline-primary btn-lg px-5 py-3">Log In</a>
                 {% endif %}
             </div>
         </div>
