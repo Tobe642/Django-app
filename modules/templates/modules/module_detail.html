@@ -51,6 +51,23 @@
                     <a href="{% url 'pages:login' %}?next={{ request.path }}" class="btn btn-outline-primary btn-lg px-5 py-3">Log In</a>
                 {% endif %}
             </div>
+
+
+            <div class="mt-5">
+                <h3 class="fs-4">Registered Students</h3>
+                {% if registrations %}
+                    <ul class="list-group">
+                        {% for registration in registrations %}
+                            <li class="list-group-item">
+                                {{ registration.student.user.username }} ({{ registration.student.user.email }})
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="text-muted">No students are registered for this module yet.</p>
+                {% endif %}
+            </div>
+            
         </div>
     </div>
 </div>

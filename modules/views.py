@@ -57,8 +57,15 @@ def enroll_in_module(request, module_id):
 def module_detail(request, module_id):
     module = get_object_or_404(Module, id=module_id)
     is_enrolled = request.user.groups.filter(name=module.name).exists()
-    return render(request, 'modules/module_detail.html', {'module': module, 'is_enrolled': is_enrolled})
 
+    # Get all students registered for this module
+    registrations = Registration.objects.filter(module=module)
+
+    return render(request, 'modules/module_detail.html', {
+        'module': module,
+        'is_enrolled': is_enrolled,
+        'registrations': registrations,  # Pass registrations to the template
+    })
 
 
 @login_required
