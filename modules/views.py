@@ -54,9 +54,9 @@ def enroll_in_module(request, module_id):
 #     is_enrolled = module.enrolled_students.filter(id=request.user.id).exists() if request.user.is_authenticated else False
 #     return render(request, 'modules/module_detail.html', {'module': module, 'is_enrolled': is_enrolled})
 
-def module_detail(request, module_id):
-    module = get_object_or_404(Module, id=module_id)
-    is_enrolled = request.user.groups.filter(name=module.name).exists()
+def module_detail(request, module_code):
+    module = get_object_or_404(Module, code=module_code)  # Lookup by module code
+    is_enrolled = request.user.groups.filter(name=module.name).exists() if request.user.is_authenticated else False
 
     # Get all students registered for this module
     registrations = Registration.objects.filter(module=module)
@@ -66,6 +66,7 @@ def module_detail(request, module_id):
         'is_enrolled': is_enrolled,
         'registrations': registrations,  # Pass registrations to the template
     })
+
 
 
 @login_required
