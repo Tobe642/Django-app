@@ -5,6 +5,8 @@
     <h1 class="display-5">My Registrations</h1>
     <hr class="my-4">
 
+
+    
     {% if registrations %}
         <div class="row">
             {% for registration in registrations %}
@@ -16,14 +18,13 @@
                         <p class="card-text">
                             <strong>Code:</strong> {{ registration.module.code }}<br>
                             <strong>Credits:</strong> {{ registration.module.credit }}<br>
-                            <strong>Description:</strong> {{ registration.module.description|truncatewords:20 }}
-                        </p>
+                            <strong>Description:</strong> {{ registration.module.description|truncatewords:20 }}</p>
                         <!-- Unenroll Button -->
-                        <form action="{% url 'modules:unenroll_from_module' registration.module.id %}" method="post" class="mt-3">
+                        <form action="{% url 'modules:unenroll_from_module' registration.module.code %}" method="post" class="mt-3">
                             {% csrf_token %}
                             <button type="submit" class="btn btn-danger btn-sm">Unenroll</button>
                         </form>
-                        <a href="{% url 'modules:module_detail' registration.module.id %}" class="btn btn-primary btn-sm mt-2">View Module</a>
+                        <a href="{% url 'modules:module_detail' registration.module.code %}" class="btn btn-primary btn-sm mt-2">View Module</a>
                     </div>
                 </div>
             </div>
@@ -35,3 +36,13 @@
     {% endif %}
 </div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+

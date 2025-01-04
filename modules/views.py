@@ -23,8 +23,8 @@ from django.contrib.auth.models import Group
 #     # Use the namespace 'modules' to reverse the URL
 #     return redirect('modules:module_detail', module_id=module.id)
 
-def enroll_in_module(request, module_id):
-    module = get_object_or_404(Module, id=module_id)
+def enroll_in_module(request, module_code):
+    module = get_object_or_404(Module, code=module_code)
     student = request.user
 
     # Add the student to the Group (existing logic)
@@ -41,7 +41,7 @@ def enroll_in_module(request, module_id):
     else:
         messages.info(request, f"You are already enrolled in {module.name}.")
 
-    return redirect('modules:module_detail', module_id=module.id)
+    return redirect('modules:module_detail', module_code=module.code)
 
 
 
@@ -70,8 +70,8 @@ def module_detail(request, module_code):
 
 
 @login_required
-def unenroll_from_module(request, module_id):
-    module = get_object_or_404(Module, id=module_id)
+def unenroll_from_module(request, module_code):
+    module = get_object_or_404(Module, code=module_code)
     user = request.user
 
     # Remove the student from the Group
@@ -90,7 +90,7 @@ def unenroll_from_module(request, module_id):
     else:
         messages.warning(request, f"You are not enrolled in {module.name}.")
 
-    return redirect('modules:module_detail', module_id=module.id)
+    return redirect('modules:module_detail', module_code=module.code)
 
 
 

@@ -29,13 +29,13 @@
                     <!-- Show buttons if user is logged in -->
                     {% if is_enrolled %}
                         <p class="text-success fs-4">You are currently enrolled in this module.</p>
-                        <form action="{% url 'modules:unenroll_from_module' module.id %}" method="post" class="d-inline">
+                        <form action="{% url 'modules:unenroll_from_module' module.code %}" method="post" class="d-inline">
                             {% csrf_token %}
                             <button type="submit" class="btn btn-danger btn-lg px-5 py-3">Unenroll</button> <!-- Bigger Button -->
                         </form>
                     {% else %}
                         {% if module.available == 'OPEN' %}
-                            <form action="{% url 'modules:enroll_in_module' module.id %}" method="post" class="d-inline">
+                            <form action="{% url 'modules:enroll_in_module' module.code %}" method="post" class="d-inline">
                                 {% csrf_token %}
                                 <button type="submit" class="btn btn-primary btn-lg px-5 py-3">Enroll in this Module</button> <!-- Bigger Button -->
                             </form>
