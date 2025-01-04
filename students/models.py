@@ -5,6 +5,9 @@ from django.contrib import admin
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from modules.models import Module 
+
+
+
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     date_of_birth = models.DateField(null=True, blank=True)

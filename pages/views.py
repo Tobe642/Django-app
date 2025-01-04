@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from courses.models import Course
 from modules import models
 from django.core.paginator import Paginator
-
+from django.core.mail import EmailMessage
 from django.http import JsonResponse, HttpResponse
 
 def home(request):
@@ -51,8 +51,31 @@ def modulelist(request):
     return render(request,'pages/modulelist.html')  
 
 def contact(request):
-    return render(request,'pages/contact.html')  
+    if request.method == 'POST':
+        form = contactForm(request.POST)
+        if form.is_valid():
+            # You can handle the email sending here (optional)
+            # Example: Send email logic (if required)
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
 
+            
+            message = form.cleaned_data['message']
+            EmailMessage(
+                'Contact Form Submission from{}' .format(name),
+                message,
+                'form-response@example.com', # send from user
+                ['test.mailtrap123@gmail.com'],  #send to admin email
+                [],
+                reply_to=[email]
+            ).send()
+            # Add a success message
+            messages.success(request, 'Your message has been sent successfully!')
+            form = contactForm()  # Reset form after submission
+    else:
+        form = contactForm()
+    
+    return render(request, 'pages/contact.html', {'form': form})
 
 #def log
 

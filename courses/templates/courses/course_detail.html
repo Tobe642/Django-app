@@ -5,7 +5,7 @@
     <!-- Course Header -->
     <div class="card shadow-lg mb-4">
         <div class="card-header bg-primary text-white text-center">
-            <h1 class="fs-1">{{ course.name }}</h1>
+            <h1 class="fs-1 text-white">{{ course.name }}</h1>
             <p class="fs-3"><strong>Course Code:</strong> {{ course.code }}</p>
         </div>
         <div class="card-body">
@@ -34,7 +34,7 @@
                                     <span class="badge bg-warning text-dark">Waitlist</span>
                                 {% endif %}
                             </p>
-                            <a href="{% url 'modules:module_detail' module.id %}" class="btn btn-primary">View Module</a>
+                            <a href="{% url 'modules:module_detail' module.code %}" class="btn btn-primary">View Module</a>
                         </div>
                     </div>
                 </div>

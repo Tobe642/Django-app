@@ -75,7 +75,9 @@ ROOT_URLCONF = 'itapps.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -179,13 +181,22 @@ LOGIN_REDIRECT_URL = 'pages:home'
 #LOGIN_URL = 'login'
 #LOGIN_URL = 'itapps:home'
 
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.mysql',
-   #     'NAME': 'djangodb',
-   #     'USER': 'root',
-    #    'PASSWORD': 'Power2020',
-    #    'HOST': 'localhost',  # Use 'localhost' if MySQL is running locally
-    #    'PORT': '3306',       # Default MySQL port
-   # }
-#}
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'djangodb',
+#        'USER': 'root',
+#        'PASSWORD': 'Power2020',
+#        'HOST': 'localhost',  # Use 'localhost' if MySQL is running locally
+#        'PORT': '3306',       # Default MySQL port
+#    }
+# }
+
+# Looking to send emails in production? Check out our Email API/SMTP product!
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '4923c15a034a8f'
+EMAIL_HOST_PASSWORD = 'c86461abdf5dc1'
+EMAIL_PORT = '2525'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

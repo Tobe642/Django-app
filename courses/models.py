@@ -6,6 +6,7 @@ class Course(models.Model):
     name = models.CharField(max_length=255, blank=False, null=False)
     code = models.CharField(max_length=255, blank=False, null=False)
     description = models.TextField(default=None, blank=True, null=True)
+    image = models.ImageField(upload_to= 'course_images/', null=True, blank=True,)
 
     def __str__(self):
         return f'{self.name}'
