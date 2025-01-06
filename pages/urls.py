@@ -21,3 +21,11 @@ urlpatterns = [
     path('register', views.register, name='register'),
     path('modulelist/', views.modulelist, name ='modulelist')
 ]
+
+
+
+
+
+
+
+

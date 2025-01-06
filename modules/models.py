@@ -20,6 +20,8 @@ class Module(models.Model):
     courses = models.ManyToManyField(Course, blank=True)
     enrolled_students = models.ManyToManyField(User, related_name='enrolled_modules', blank=True)
 
+    
+
 
     def __str__(self):
         return f'{self.name}'

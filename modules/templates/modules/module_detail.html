@@ -58,9 +58,18 @@
                 {% if registrations %}
                     <ul class="list-group">
                         {% for registration in registrations %}
-                            <li class="list-group-item">
-                                {{ registration.student.user.username }} ({{ registration.student.user.email }})
-                            </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <img class="rounded-circle img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;" src="{{ registration.student.image.url }}" alt="Profile Picture">
+                            <span class="ms-3">{{ registration.student.user.username }} ({{ registration.student.user.email }})</span>
+                            <span class="ms-3">
+                                {{ registration.student.user.username }}
+                                {% if request.user == registration.student.user %}
+                                    <strong>(YOU)</strong>
+                                {% endif %}
+                            </span>
+        
+                        </li>
+                        
                         {% endfor %}
                     </ul>
                 {% else %}
@@ -72,3 +81,4 @@
     </div>
 </div>
 {% endblock %}
+
