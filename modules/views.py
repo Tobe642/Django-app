@@ -6,6 +6,8 @@ from .models import Module
 from registrations.models import Registration
 from django.contrib import messages
 from django.contrib.auth.models import Group
+from django.db.models import Count
+from django.core.paginator import Paginator
 
 
 # @login_required
@@ -95,5 +97,24 @@ def unenroll_from_module(request, module_code):
 
 
 def list_modules(request):
-    modules = Module.objects.all()
-    return render(request, 'modules/module_list.html', {'modules': modules})
+    # Fetch all modules for pagination
+    modules = Module.objects.annotate(student_count=Count('registration__id'))
+
+    # Apply pagination
+    paginator = Paginator(modules, 6)  # Show 10 modules per page
+    page_number = request.GET.get('page')  # Get the page number from query parameters
+    page_obj = paginator.get_page(page_number)  # Get the current page of modules
+
+    # Fetch most popular modules (modules with the most enrolled students)
+    popular_modules = modules.order_by('-student_count')[:4]
+
+
+    # Fetch recently added modules (if `date_added` exists, otherwise use `id`)
+    recent_modules = Module.objects.order_by('-id')[:4]  # Replace `id` with `date_added` if available
+
+    return render(request, 'modules/module_list.html', {
+        'page_obj': page_obj,  # Pass the paginated modules
+        'popular_modules': popular_modules,  # Pass popular modules
+        'recent_modules': recent_modules,  # Pass recently added modules
+    })
+    #return render(request, 'modules/module_list.html', {'modules': modules})
