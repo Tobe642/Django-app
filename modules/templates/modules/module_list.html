@@ -1,23 +1,114 @@
 {% extends 'itapps/base.html' %}
 
+
+
 {% block content %}
 <div class="container mt-5">
-    <div class="row">
-        {% for module in modules %}
-        <!-- Each module card -->
-        <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Module Image">
-                <div class="card-body">
-                    <h5 class="card-title">{{ module.name }}</h5>
-                    <p class="card-text">{{ module.description|truncatewords:20 }}</p>
-                </div>
-                <div class="card-footer">
-                    <a href="{% url 'modules:module_detail' module.code %}" class="btn btn-sm btn-primary">Module Details</a>
+    <h1 class="text-center mb-4">Modules List</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% if page_obj %}
+            {% for module in page_obj %}
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ module.name }}</h5>
+                        <p class="card-text">
+                            <strong>Code:</strong> {{ module.code }}<br>
+                            <strong>Credits:</strong> {{ module.credit }}<br>
+                            <strong>Availability:</strong>
+                            {% if module.available == 'OPEN' %}
+                                <span class="badge bg-success">Open</span>
+                            {% elif module.available == 'CLOSED' %}
+                                <span class="badge bg-danger">Closed</span>
+                            {% else %}
+                                <span class="badge bg-warning text-dark">Waitlist</span>
+                            {% endif %}
+                        </p>
+                        <a href="{% url 'modules:module_detail' module.code %}" class="btn btn-primary">View Module</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        {% endfor %}
+            {% endfor %}
+        {% else %}
+            <p class="text-muted">No modules available.</p>
+        {% endif %}
     </div>
+
+    <!-- Pagination Controls -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+            {% for page_num in page_obj.paginator.page_range %}
+                {% if page_num == page_obj.number %}
+                    <li class="page-item active"><a class="page-link">{{ page_num }}</a></li>
+                {% elif page_num >= page_obj.number|add:'-2' and page_num <= page_obj.number|add:'2' %}
+                    <li class="page-item"><a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a></li>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+
+    <!-- Section 1: Most Popular Modules -->
+    <div class="mt-5">
+        <h2 class="mb-4 text-center">Most Popular Modules</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% if popular_modules %}
+                {% for module in popular_modules %}
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ module.name }}</h5>
+                            <p class="card-text">
+                                <strong>Enrolled Students:</strong> {{ module.student_count }}<br>
+                            </p>
+                            <a href="{% url 'modules:module_detail' module.code %}" class="btn btn-outline-primary btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-muted text-center">No popular modules available.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    
+<!-- Section 2: Recently Added Modules -->
+<div class="mt-5">
+    <h2 class="mb-4 text-center">Recently Added Modules</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% if recent_modules %}
+            {% for module in recent_modules %}
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ module.name }}</h5>
+                        <p class="card-text">
+                            <strong>Added On:</strong> 12/12/2024 <br>
+                        </p>
+                        <a href="{% url 'modules:module_detail' module.code %}" class="btn btn-outline-secondary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-muted text-center">No recently added modules available.</p>
+        {% endif %}
+    </div>
+</div>
 </div>
 {% endblock %}

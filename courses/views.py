@@ -20,7 +20,10 @@ def course_detail(request, course_id):
         'course': course,
         'modules': page_obj,  # Pass the paginated modules
     })
-                  
+
+def course_list(request):
+    courses = Course.objects.prefetch_related('modules')  # Load related modules efficiently
+    return render(request, 'template_name.html', {'courses': courses})
 #class PostListView(ListView):
 #    model = Course
 #    ordering = ['-date_submitted']
