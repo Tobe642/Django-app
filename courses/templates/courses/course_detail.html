@@ -1,0 +1,72 @@
+{% extends 'itapps/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Course Header -->
+    <div class="card shadow-lg mb-4">
+        <div class="card-header bg-primary text-white text-center">
+            <h1 class="fs-1 text-white">{{ course.name }}</h1>
+            <p class="fs-3"><strong>Course Code:</strong> {{ course.code }}</p>
+        </div>
+        <div class="card-body">
+            <p class="fs-4"><strong>Description:</strong> {{ course.description|default:"No description available." }}</p>
+        </div>
+    </div>
+
+    <!-- Module Cards -->
+    <h2 class="fs-2 mb-4">Modules in this Course</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% if modules %}
+            {% for module in modules %}
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ module.name }}</h5>
+                            <p class="card-text">
+                                <strong>Code:</strong> {{ module.code }}<br>
+                                <strong>Credits:</strong> {{ module.credit }}<br>
+                                <strong>Availability:</strong>
+                                {% if module.available == 'OPEN' %}
+                                    <span class="badge bg-success">Open</span>
+                                {% elif module.available == 'CLOSED' %}
+                                    <span class="badge bg-danger">Closed</span>
+                                {% else %}
+                                    <span class="badge bg-warning text-dark">Waitlist</span>
+                                {% endif %}
+                            </p>
+                            <a href="{% url 'modules:module_detail' module.code %}" class="btn btn-primary">View Module</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-muted">No modules are associated with this course.</p>
+        {% endif %}
+    </div>
+
+    <!-- Pagination -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            {% if modules.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ modules.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+            {% for page_num in modules.paginator.page_range %}
+                <li class="page-item {% if page_num == modules.number %}active{% endif %}">
+                    <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+                </li>
+            {% endfor %}
+            {% if modules.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ modules.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+{% endblock %}

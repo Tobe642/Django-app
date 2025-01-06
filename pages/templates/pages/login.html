@@ -1,0 +1,42 @@
+<!-- LOGIN PAGE -->
+{% extends "itapps/auth_layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="row justify-content-sm-center">
+    <div class="col-md-auto">
+
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <legend class="border-bottom mb-4">Login to get started.</legend>
+
+            <div class="form-group py-2">
+                {{form.username|as_crispy_field}}
+            </div>
+
+            <div class="form-group py-2">
+                {{form.password|as_crispy_field}}
+            </div>
+
+
+            <div class="form-group py-3">
+                <button class="btn btn-outline-info" type="submit">Login</button>
+            </div>
+        </form>
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Forgot your password?
+                <a class="ml-2" href="{% url 'pages:password_reset' %}">Reset Password</a>
+            </small>
+            <small class="text-muted">
+                You need to create an account?
+                <a class="ml-2" href="{% url 'pages:register' %}">Create Account</a>
+            </small>
+        </div>
+    </div>  
+</div>  
+
+{% endblock %}

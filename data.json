@@ -1,0 +1,2538 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "students",
+        "model": "student"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "categories",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "courses",
+        "model": "course"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "modules",
+        "model": "module"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "registrations",
+        "model": "registration"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4f9rqlhi51ln964qp0oj5y4wl1lee1js",
+    "fields": {
+        "session_data": "e30:1tN4X0:Ufow3Z-S4on6gFM3dlYXl3623XO3xdCsyekCZNOm-jE",
+        "expire_date": "2024-12-30T06:24:38.992Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5no5onsodysupqqrf3ll87c6z9377uku",
+    "fields": {
+        "session_data": "e30:1tN5YF:YK1y24I8DijkyzHpSF1W7Rk2luItgUX7vL08xaFk3U4",
+        "expire_date": "2024-12-30T07:29:59.263Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8jva2rpde0ha2d0h4plz1xwfwbcn7dw7",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlk4_lPS5wzWeneNA8iR4qRC3B0ipYD2zcx7iQTbWtPWeUkTiYtQ4vS7ZcAHtx3QHdptlji3dZmy3BV50C7Hmfh5Pdy_gwq9fmuP4G0x2iMxZquKy1pDDJYMg7NWO-RAA3oCKMZHyCWGAbPRjtXZknh_AAg8OM4:1tNYBC:XbolMCcxFEENdcOshNKRmM9pCG-ERc1IAseKS-57nWo",
+        "expire_date": "2024-12-31T14:04:06.772Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9rxvrjfpefh3zf95dkx1metqmf3lsxys",
+    "fields": {
+        "session_data": "e30:1tN4wJ:ot1UWgKQoF_ychLCShi1qFp2A5l3rO-hRtEhVpXXfk8",
+        "expire_date": "2024-12-30T06:50:47.616Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "b1x4reh5wqn6k0ldtnclszykloe4r3xd",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBgSmlduvcMZGBmpGpoUtqV8e7apAvd_vfef6mI21ri1niJE6mzskGdfseE-cF1J3THept1nuu6TEnvij5o09eZ-Hk53L-Dgq1868zYu845Fo_SiyP2QH4IErIlwxkCsxhwNAZjRt8RCCebBSyCwIDq_QEuyDj1:1tN8xh:7CTzhCXuT1-TIk2kIVUwUm6lneIEaeu_FgWCcn0AMsI",
+        "expire_date": "2024-12-30T11:08:29.967Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bsmhps6sdglglcugkh4za1xapmf9y37u",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlk4_lPS5wzWeneNA8iR4qRC3B0ipYD2zcx7iQTbWtPWeUkTiYtQ4vS7ZcAHtx3QHdptlji3dZmy3BV50C7Hmfh5Pdy_gwq9fmuP4G0x2iMxZquKy1pDDJYMg7NWO-RAA3oCKMZHyCWGAbPRjtXZknh_AAg8OM4:1tNhAY:GOoFHN96vRljRnh_cJLzwLvwAadiQC2rFaM7qp1kAos",
+        "expire_date": "2024-12-31T23:40:02.892Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cp5cfs840ewtaeqsnu7bfnd0o4jixzh2",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlk4_lPS5wzWeneNA8iR4qRC3B0ipYD2zcx7iQTbWtPWeUkTiYtQ4vS7ZcAHtx3QHdptlji3dZmy3BV50C7Hmfh5Pdy_gwq9fmuP4G0x2iMxZquKy1pDDJYMg7NWO-RAA3oCKMZHyCWGAbPRjtXZknh_AAg8OM4:1tKjzS:lsS0H9zKfD_ybPSbY4_TWgZa9BWagTZ0A_LN6hHoyGI",
+        "expire_date": "2024-12-23T20:04:22.239Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "g24he1gu7wy5j7j8i7n803lu8xhmqqfv",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBgSmlduvcMZGBmpGpoUtqV8e7apAvd_vfef6mI21ri1niJE6mzskGdfseE-cF1J3THept1nuu6TEnvij5o09eZ-Hk53L-Dgq1868zYu845Fo_SiyP2QH4IErIlwxkCsxhwNAZjRt8RCCebBSyCwIDq_QEuyDj1:1tUCMH:MKjJ9zkrDMfrQn9iirgz75YrsA4ZCPfGBM5c_FUPEwE",
+        "expire_date": "2025-01-18T22:11:01.885Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "h4yxoqcq2jfeorp43tg9sufqz6s5rmg0",
+    "fields": {
+        "session_data": "e30:1tN5XR:86vg-sjiFQgi4wBDQh0PmcUv7UyshJDBkyarHnqOvAo",
+        "expire_date": "2024-12-30T07:29:09.868Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ist7euyqcuj45swlwujd10hu5gktya1h",
+    "fields": {
+        "session_data": "e30:1tN4iK:2CyyaEQOQQ9HdualAMA7Rv4FhgtZ13HrFVN81OY8cw8",
+        "expire_date": "2024-12-30T06:36:20.221Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mc3iuwguigs6txj7nlgusqqf9uv3whr3",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlk4_lPS5wzWeneNA8iR4qRC3B0ipYD2zcx7iQTbWtPWeUkTiYtQ4vS7ZcAHtx3QHdptlji3dZmy3BV50C7Hmfh5Pdy_gwq9fmuP4G0x2iMxZquKy1pDDJYMg7NWO-RAA3oCKMZHyCWGAbPRjtXZknh_AAg8OM4:1tLsG9:KlmMAtzUSwaUzhkCw2dZuZZS1bjoGe4WhTQWxwAadhc",
+        "expire_date": "2024-12-26T23:06:17.768Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v2xeit46x21urbfnxoa35o40239hjnik",
+    "fields": {
+        "session_data": "e30:1tN4kB:Rmt1kc1iiWPr4GdVg4KHeytDYh6TOs3yXRQev-ULGLI",
+        "expire_date": "2024-12-30T06:38:15.509Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wlmsxxgr1fa5pgdln673p3tyml55hrip",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSG8B1y69xvIAINUDU1KuzL-uzbpQrf3nHNfLOK2trgNWuJU2JkpdvrdEuYH9R2UO_bbzPPc12VKfFf4QQe_zoWel8P9O2g42reWGlXA5AwSWQGAWkEga0MmCSACGp1tEDZJb3ytoKs0TnqRSgIjnWDvD8suNuY:1tM7eV:6aX_rIG8isGTQ_ZfU4AJM-TYvMk2aDCcoQxxBgiJCsQ",
+        "expire_date": "2024-12-27T15:32:27.105Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y1fkj3za8hq5588dd89o3xqcct5od2g1",
+    "fields": {
+        "session_data": "e30:1tN51G:MhEKp-jT5Ey8QgUVouebf02BQqIXwo4pxtHW8DM6Elg",
+        "expire_date": "2024-12-30T06:55:54.284Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y55onwduqd55p0mm2a9jlkf05zif7mmr",
+    "fields": {
+        "session_data": "e30:1tN4is:BSrZnlKYcY8roFOWdxNMevldl88HIiB6wJH5HU9XyHc",
+        "expire_date": "2024-12-30T06:36:54.942Z"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": 1,
+    "fields": {
+        "name": "Classroom",
+        "description": "Classroom based Courses only"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+        "name": "Business",
+        "code": "1",
+        "description": "Welcome to business",
+        "image": "course_images/resize.jpeg"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+        "name": "Medicine",
+        "code": "2",
+        "description": "Welcome to medicine",
+        "image": "course_images/medicine1.jpg"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+        "name": "Accounting",
+        "code": "3",
+        "description": "Welcome to accounting",
+        "image": "course_images/accounting.webp"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 4,
+    "fields": {
+        "name": "Computer science",
+        "code": "4",
+        "description": "Welcome to computer science",
+        "image": "course_images/computingh.jpeg"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 5,
+    "fields": {
+        "name": "Engineering",
+        "code": "5",
+        "description": "Welcome to engineering",
+        "image": "course_images/engineering.jpg"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 15,
+    "fields": {
+        "student": 1,
+        "module": 2,
+        "date": "2024-12-17T23:23:23.732Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 17,
+    "fields": {
+        "student": 1,
+        "module": 7,
+        "date": "2024-12-17T23:28:11.019Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 25,
+    "fields": {
+        "student": 18,
+        "module": 8,
+        "date": "2025-01-02T19:32:48.691Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 26,
+    "fields": {
+        "student": 13,
+        "module": 8,
+        "date": "2025-01-02T19:33:40.931Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 31,
+    "fields": {
+        "student": 15,
+        "module": 6,
+        "date": "2025-01-02T23:41:45.625Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 32,
+    "fields": {
+        "student": 15,
+        "module": 7,
+        "date": "2025-01-02T23:41:59.354Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 33,
+    "fields": {
+        "student": 15,
+        "module": 2,
+        "date": "2025-01-04T20:02:21.961Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 34,
+    "fields": {
+        "student": 15,
+        "module": 8,
+        "date": "2025-01-04T20:02:34.693Z"
+    }
+},
+{
+    "model": "registrations.registration",
+    "pk": 35,
+    "fields": {
+        "student": 15,
+        "module": 10,
+        "date": "2025-01-04T20:26:40.916Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add student",
+        "content_type": [
+            "students",
+            "student"
+        ],
+        "codename": "add_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change student",
+        "content_type": [
+            "students",
+            "student"
+        ],
+        "codename": "change_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete student",
+        "content_type": [
+            "students",
+            "student"
+        ],
+        "codename": "delete_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view student",
+        "content_type": [
+            "students",
+            "student"
+        ],
+        "codename": "view_student"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add category",
+        "content_type": [
+            "categories",
+            "category"
+        ],
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change category",
+        "content_type": [
+            "categories",
+            "category"
+        ],
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete category",
+        "content_type": [
+            "categories",
+            "category"
+        ],
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view category",
+        "content_type": [
+            "categories",
+            "category"
+        ],
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add course",
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "codename": "add_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change course",
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "codename": "change_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete course",
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "codename": "delete_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view course",
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "codename": "view_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add module",
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "codename": "add_module"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change module",
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "codename": "change_module"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete module",
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "codename": "delete_module"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view module",
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "codename": "view_module"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add registration",
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "codename": "add_registration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change registration",
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "codename": "change_registration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete registration",
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "codename": "delete_registration"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view registration",
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "codename": "view_registration"
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "entrepreneurship",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "biology",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "management",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "paracetamol class",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "game development",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "iot",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "auditing",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "marketing",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$2EFhcSLupNbh1R2MjXrbFA$GKjzj9E2ADxBmWuonv2gwAfTs/YBW1l477W1OaM8UCI=",
+        "last_login": "2024-12-17T23:40:02.861Z",
+        "is_superuser": true,
+        "username": "c2088748",
+        "first_name": "",
+        "last_name": "",
+        "email": "Tobeagunenye@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-09T20:03:45.482Z",
+        "groups": [
+            [
+                "biology"
+            ],
+            [
+                "management"
+            ],
+            [
+                "paracetamol class"
+            ],
+            [
+                "iot"
+            ],
+            [
+                "marketing"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$vkJzUjhb0AqBBJTXyAzb92$FjAk2h7onIJ4qoUeuiYFtjbPisG2uzKvAlPp3PsZ1yI=",
+        "last_login": "2024-12-13T15:32:27.086Z",
+        "is_superuser": true,
+        "username": "vee",
+        "first_name": "",
+        "last_name": "",
+        "email": "vee@shu.local",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-13T15:32:15.476Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$LaYmkWow8vnal7vzXirqxS$idl2MGbq1+Yg2HXgfo8VMmPTxcNBXt2vuCsI1X2pSy4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "steve",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:05:04.953Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$eTtXBNWuxwwDNyCAnWS9Lj$MNfPpJP+AbvMFMC4ACNS6Es5CSDZmww/JPRMQOYPGa0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "john",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:07:10.881Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$PmjH2c9k0lBbfjsm8stNlR$7s07irNGCewEU8Ai8uLskpKSPnqYT+VRdJ359TAa+MQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ella",
+        "first_name": "ella",
+        "last_name": "jude",
+        "email": "ellajude@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:18:34Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$I3sPavvPdAvF90eO4iViw6$EjLfNzkft8mQ7orZBiXJvkW8u/SyuDSjSkj7lpW9Cxw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "timmy",
+        "first_name": "tim",
+        "last_name": "timothy",
+        "email": "Tim@tim.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:22:29.372Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$4VY3MZRmGypHFpnNjcDv5M$HRRzlsXHq0nduO71aViVVayObojX21a36rS1vPprJmM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "joey123",
+        "first_name": "joey",
+        "last_name": "Johnson",
+        "email": "Tim@tim.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:28:39.007Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$JG69rHguKqWbm4ZQVpdYrt$uIq/rUPqEF38BV4twokWVEvvA9F+G1a/oTs2wciUDk0=",
+        "last_login": "2024-12-16T10:53:56.970Z",
+        "is_superuser": false,
+        "username": "percy",
+        "first_name": "percy",
+        "last_name": "zim",
+        "email": "percy@percy.cvom",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:40:37.523Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$zQfPzp4q3DgB71JvOLi5CE$dyd9OjbSe1J4akvxYgKZN5wPeJ7i37SIo11FGJTUYb4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "lola",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:41:25.981Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$PiKbvfGKl9YZnZcjWsNHxN$oWkYMrOo20aDO53GL9DBTuGeJSX1GxhyVEPQGxhF080=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sam",
+        "first_name": "samuel",
+        "last_name": "olu",
+        "email": "sam@sam.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T16:59:37Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$gp1zWIkGQuNhcPLSfRbp8G$ZRd38YgCF/6u+MQimsR3LJes9fzN6dapn5QFaH1Fc88=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "darren",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T17:00:16.338Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$CgtUvjYwy1in6gqHvBoJzd$VmBBN4Rcpvq82uST0TNdbLvM9lf7jRLcCDz1lbm9yxg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "steph",
+        "first_name": "steph",
+        "last_name": "ulo",
+        "email": "steph@ulo.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T17:10:02.442Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$V6lWtXyP0brz0DnvTEWvtt$684ZqMUMDio2A7MzNX98+JwBXy0jx2cWwMowoKkUrjw=",
+        "last_login": "2024-12-17T16:13:28.598Z",
+        "is_superuser": false,
+        "username": "Tobe1242",
+        "first_name": "Tobe",
+        "last_name": "Agunenye",
+        "email": "Tobeagunenye@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-16T06:24:23.067Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$ZyfTSmbs3jwc56dSnpQBWv$crbZfjpcw2E+Yfa+DwwCflYlQySMKeQG+yaTfTgnREM=",
+        "last_login": "2024-12-16T06:50:47.667Z",
+        "is_superuser": false,
+        "username": "jenny",
+        "first_name": "jen",
+        "last_name": "jenny",
+        "email": "jen@jen.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-16T06:50:35.302Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Jsn3H2iNtHxKcL6VUAmHz7$/hvyKPLQYbF9qBPrNV4AyFChn33qHAzPulwW05nHiZk=",
+        "last_login": "2025-01-02T19:33:11.257Z",
+        "is_superuser": false,
+        "username": "ceesokoh",
+        "first_name": "chenille",
+        "last_name": "sokoh",
+        "email": "ceesokoh@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-16T10:35:01.959Z",
+        "groups": [
+            [
+                "entrepreneurship"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$RCzLBRFOuwdsbB0Z8xjJeW$b9siiJoatf0hCyXjj3VkV/QgHJEARjChUUH4ouGtgdc=",
+        "last_login": "2024-12-16T10:56:02.482Z",
+        "is_superuser": false,
+        "username": "jonathan123",
+        "first_name": "johnathan",
+        "last_name": "michaels",
+        "email": "jonathanmichaels@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-16T10:54:51.842Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$OiKEgfRWLzT8iw6EoPC6j5$z42IG+C3rOTIGmD3B8rJjITfj/Of59Qsil6xPg3cLos=",
+        "last_login": "2025-01-04T22:11:01.867Z",
+        "is_superuser": false,
+        "username": "tobe642",
+        "first_name": "tobe",
+        "last_name": "agunenye",
+        "email": "tobe@hotmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-16T11:01:53.912Z",
+        "groups": [
+            [
+                "entrepreneurship"
+            ],
+            [
+                "biology"
+            ],
+            [
+                "paracetamol class"
+            ],
+            [
+                "iot"
+            ],
+            [
+                "marketing"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$yA4SewLgO7IPadvFC2U18T$kLyWjt8kfrKsGxkxMqJLLOhAjfkuj8aQwLGexybkMMY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "rs3mybrevvva",
+        "first_name": "wasim",
+        "last_name": "khan",
+        "email": "owimbo@im.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-17T13:43:04.763Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$8EWMVKSOxweJXtkI0OFQbz$dUnMGgd420k/WJksqBICGhmCJYMNEhPFdjEIxwX8vcM=",
+        "last_login": "2025-01-01T12:53:48.219Z",
+        "is_superuser": false,
+        "username": "jacky123",
+        "first_name": "mikeson",
+        "last_name": "jacky",
+        "email": "jackymike@shu.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-01-01T12:53:19.558Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$vQKYPIgbLusdHUely3hlJD$2Qg4zVI9qufnijRmLvigrtBGZG0oJp9fXLoQcmuvOSQ=",
+        "last_login": "2025-01-02T22:54:43.892Z",
+        "is_superuser": true,
+        "username": "student",
+        "first_name": "",
+        "last_name": "",
+        "email": "Student@shu.co.uk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-01-01T15:22:32.664Z",
+        "groups": [
+            [
+                "entrepreneurship"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "students.student",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "c2088748"
+        ],
+        "date_of_birth": "2024-12-14",
+        "address": "1 lane",
+        "city": "sheffield",
+        "country": "uk",
+        "image": "profile_pics/91abe5ff3a042475a3d7cf02d8e76cc6_XP8ZaSP.jpg"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "steve"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "john"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "timmy"
+        ],
+        "date_of_birth": "2024-12-15",
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "joey123"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "percy"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "lola"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "sam"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "darren"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "steph"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "Tobe1242"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "jenny"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "ceesokoh"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "profile_pics/channels4_profile.jpg"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "jonathan123"
+        ],
+        "date_of_birth": "2003-10-30",
+        "address": "1 street lane",
+        "city": "town city",
+        "country": "uk",
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "tobe642"
+        ],
+        "date_of_birth": "2003-10-30",
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "profile_pics/91abe5ff3a042475a3d7cf02d8e76cc6_VPXogUa.jpg"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "rs3mybrevvva"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "jacky123"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "media/profile_pics/default.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "student"
+        ],
+        "date_of_birth": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "image": "profile_pics/91abe5ff3a042475a3d7cf02d8e76cc6_qoipm5y.jpg"
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 1,
+    "fields": {
+        "name": "Designing Cloud-based Systems",
+        "code": "55-606366",
+        "credit": 30,
+        "category": 1,
+        "description": "Some Course about Designing computer systems in the cloud",
+        "available": "WAITLIST",
+        "courses": [
+            4
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 2,
+    "fields": {
+        "name": "iot",
+        "code": "123",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            4
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 3,
+    "fields": {
+        "name": "finance",
+        "code": "1234",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "CLOSED",
+        "courses": [
+            3
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 4,
+    "fields": {
+        "name": "budgeting",
+        "code": "54321",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "WAITLIST",
+        "courses": [
+            3
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 5,
+    "fields": {
+        "name": "biochemistry",
+        "code": "6161",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "WAITLIST",
+        "courses": [
+            2
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 6,
+    "fields": {
+        "name": "paracetamol class",
+        "code": "71717",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            2
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 7,
+    "fields": {
+        "name": "marketing",
+        "code": "818181",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            1
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 8,
+    "fields": {
+        "name": "entrepreneurship",
+        "code": "100",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            1
+        ],
+        "enrolled_students": [
+            [
+                "ceesokoh"
+            ]
+        ]
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 9,
+    "fields": {
+        "name": "management",
+        "code": "456",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            1
+        ],
+        "enrolled_students": [
+            [
+                "c2088748"
+            ]
+        ]
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 10,
+    "fields": {
+        "name": "biology",
+        "code": "6787",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            2
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 11,
+    "fields": {
+        "name": "auditing",
+        "code": "789",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            3
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "modules.module",
+    "pk": 12,
+    "fields": {
+        "name": "game development",
+        "code": "134",
+        "credit": 30,
+        "category": 1,
+        "description": "",
+        "available": "OPEN",
+        "courses": [
+            4
+        ],
+        "enrolled_students": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-12-12T23:06:44.359Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "Business",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-12-12T23:07:20.997Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "Medicine",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-12-12T23:07:43.912Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "3",
+        "object_repr": "Accounting",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-12-12T23:08:04.725Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "4",
+        "object_repr": "Computer science",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-12-13T15:38:36.051Z",
+        "user": [
+            "vee"
+        ],
+        "content_type": [
+            "categories",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Classroom",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-12-13T15:39:35.888Z",
+        "user": [
+            "vee"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "1",
+        "object_repr": "Designing Cloud-based Systems",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-12-14T20:31:32.358Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "students",
+            "student"
+        ],
+        "object_id": "1",
+        "object_repr": " ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-12-14T22:48:55.867Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "2",
+        "object_repr": "iot",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-12-14T22:49:26.447Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "3",
+        "object_repr": "finance",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-12-14T22:49:44.735Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "4",
+        "object_repr": "budgeting",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-12-14T22:50:23.502Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "5",
+        "object_repr": "biochemistry",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-12-14T22:50:43.299Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "6",
+        "object_repr": "paracetamol class",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-12-14T22:51:04.280Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "7",
+        "object_repr": "marketing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-12-14T22:51:30.460Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "8",
+        "object_repr": "entrepreneurship",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-12-15T16:05:05.618Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "steve",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-12-15T16:07:11.546Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "john",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-12-15T16:18:34.924Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "ella",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-12-15T16:25:34.411Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "students",
+            "student"
+        ],
+        "object_id": "4",
+        "object_repr": "tim timothy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-12-15T16:33:57.755Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "ella",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-12-15T16:35:13.322Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "ella",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-12-15T16:41:26.678Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "9",
+        "object_repr": "lola",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-12-15T17:00:16.979Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "11",
+        "object_repr": "darren",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-12-15T17:26:00.865Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "10",
+        "object_repr": "sam",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-12-16T00:44:28.169Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "engineering",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-12-16T00:44:50.822Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "Engineering",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-12-16T10:54:52.501Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "16",
+        "object_repr": "jonathan123",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-12-16T17:31:01.331Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "6",
+        "object_repr": "paracetamol class",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Courses\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-12-16T17:38:47.384Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "5",
+        "object_repr": "biochemistry",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Courses\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-12-16T17:39:40.172Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "9",
+        "object_repr": "management",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-12-16T17:44:19.967Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "10",
+        "object_repr": "biology",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-12-16T17:44:52.086Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "11",
+        "object_repr": "auditing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-12-16T17:45:27.996Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "12",
+        "object_repr": "game development",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-12-17T13:02:56.153Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "object_id": "1",
+        "object_repr": "c2088748 iot",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-12-17T13:38:43.024Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "object_id": "5",
+        "object_repr": "c2088748 paracetamol class",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-12-17T13:38:56.979Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "object_id": "4",
+        "object_repr": "c2088748 management",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-12-17T13:38:56.979Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "object_id": "3",
+        "object_repr": "c2088748 biology",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-12-17T13:38:56.979Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "object_id": "2",
+        "object_repr": "c2088748 entrepreneurship",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-12-17T13:38:56.979Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "registrations",
+            "registration"
+        ],
+        "object_id": "1",
+        "object_repr": "c2088748 iot",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-12-17T23:28:04.368Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "modules",
+            "module"
+        ],
+        "object_id": "7",
+        "object_repr": "marketing",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-12-17T23:52:36.132Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "Engineering",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-12-17T23:59:50.441Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "Medicine",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-12-18T00:01:32.366Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "Medicine",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-12-18T00:06:48.208Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "3",
+        "object_repr": "Accounting",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-12-18T00:07:48.415Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "4",
+        "object_repr": "Computer science",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-12-18T00:08:04.215Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "Medicine",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-12-18T00:09:15.372Z",
+        "user": [
+            "c2088748"
+        ],
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "Business",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+}
+]
