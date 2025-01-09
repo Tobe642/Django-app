@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Modules List</h1>
+    <h1 class="text-center mb-4">Module List</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% if page_obj %}
             {% for module in page_obj %}
@@ -47,7 +47,7 @@
             {% for page_num in page_obj.paginator.page_range %}
                 {% if page_num == page_obj.number %}
                     <li class="page-item active"><a class="page-link">{{ page_num }}</a></li>
-                {% elif page_num >= page_obj.number|add:'-2' and page_num <= page_obj.number|add:'2' %}
+                {% elif page_num >= page_obj.number|add:'-2' and page_num < = page_obj.number|add:'2' %}
                     <li class="page-item"><a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a></li>
                 {% endif %}
             {% endfor %}
