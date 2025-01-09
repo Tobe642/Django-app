@@ -1,6 +1,8 @@
 from django.db import models
 from django.urls import reverse
 #here
+
+#here
 class Course(models.Model):
         
     name = models.CharField(max_length=255, blank=False, null=False)
