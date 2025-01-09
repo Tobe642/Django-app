@@ -8,7 +8,7 @@ from modules import models
 from django.core.paginator import Paginator
 from django.core.mail import EmailMessage
 from django.http import JsonResponse, HttpResponse
-
+#HERE
 def home(request):
     url = 'https://api.openweathermap.org/data/2.5/weather?q={},{}&units=metric&appid={}'
     cities = [('Sheffield', 'UK'), ('Melaka', 'Malaysia'), ('Bandung', 'Indonesia')]
