@@ -79,6 +79,7 @@ def contact(request):
 
 #def log
 
+#HERE
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
