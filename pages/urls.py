@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
 
-
+#USED DJANGOS LOG IN LOG OUT
 #from .views import PostListView, PostDetailView, PostCreateView, PostUpdateView
 
 app_name = 'pages'

@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from modules.models import Module 
 
 
-
+#here 
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     date_of_birth = models.DateField(null=True, blank=True)
@@ -22,7 +22,7 @@ class Student(models.Model):
 
     # create Student porfile when new user signs up
 
-
+#here
 def create_Student(sender, instance, created, **kwargs):
         if created:
             user_Student = Student(user=instance)

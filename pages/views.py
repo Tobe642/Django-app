@@ -8,7 +8,10 @@ from modules import models
 from django.core.paginator import Paginator
 from django.core.mail import EmailMessage
 from django.http import JsonResponse, HttpResponse
+#HERE
 
+
+#here for api
 def home(request):
     url = 'https://api.openweathermap.org/data/2.5/weather?q={},{}&units=metric&appid={}'
     cities = [('Sheffield', 'UK'), ('Melaka', 'Malaysia'), ('Bandung', 'Indonesia')]
@@ -49,7 +52,7 @@ def about(request):
 
 def modulelist(request):
     return render(request,'pages/modulelist.html')  
-
+#here
 def contact(request):
     if request.method == 'POST':
         form = contactForm(request.POST)
@@ -79,6 +82,7 @@ def contact(request):
 
 #def log
 
+#HERE
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)

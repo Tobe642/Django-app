@@ -2,6 +2,10 @@ from django.db import models
 from categories.models import Category
 from courses.models import Course
 from django.contrib.auth.models import User, Group
+
+#here
+
+#migrations were implemented on everything 
 class Module(models.Model):
         
     AVAILABILITY_OPTIONS = {

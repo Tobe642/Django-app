@@ -25,6 +25,7 @@ from django.core.paginator import Paginator
 #     # Use the namespace 'modules' to reverse the URL
 #     return redirect('modules:module_detail', module_id=module.id)
 
+#here
 def enroll_in_module(request, module_code):
     module = get_object_or_404(Module, code=module_code)
     student = request.user
@@ -70,7 +71,7 @@ def module_detail(request, module_code):
     })
 
 
-
+#HERE 
 @login_required
 def unenroll_from_module(request, module_code):
     module = get_object_or_404(Module, code=module_code)
@@ -95,11 +96,11 @@ def unenroll_from_module(request, module_code):
     return redirect('modules:module_detail', module_code=module.code)
 
 
-
+#HERE
 def list_modules(request):
     # Fetch all modules for pagination
     modules = Module.objects.annotate(student_count=Count('registration__id'))
-
+    #here
     # Apply pagination
     paginator = Paginator(modules, 6)  # Show 10 modules per page
     page_number = request.GET.get('page')  # Get the page number from query parameters

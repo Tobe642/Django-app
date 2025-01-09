@@ -6,8 +6,8 @@ from .forms import UserUpdateForm, ProfileUpdateForm
 from modules.models import Module  # Import Module model
 from registrations.models import Registration  # Import Registration model
 
-
-
+#HERE
+#here you can update profile
 @login_required
 def profile(request):
     if request.method == 'POST':
