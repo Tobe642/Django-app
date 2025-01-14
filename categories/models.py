@@ -1,5 +1,5 @@
 from django.db import models
-
+#here
 class Category(models.Model):
     name = models.CharField(max_length=255, blank=False, null=False)
     description = models.TextField(blank=True, null=True)
